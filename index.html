@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StopWatch</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js"defer></script>
 </head>
 <body>
     <div class="stopwatch">
-        <h1>00:00:00</h1>
+        <h1 id="displayTime">00:00:00</h1>
         <div class="buttons">
-            <img src="images/stop.png" alt="">
-            <img src="images/start.png" alt="">
-            <img src="images/reset.png" alt="">
+            <img src="images/stop.png" onclick="watchStop()" >
+            <img src="images/start.png" onclick="watchStart()" >
+            <img src="images/reset.png" onclick="watchReset()">
         </div>
     </div>
 </body>
